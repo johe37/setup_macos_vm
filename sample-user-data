@@ -1,0 +1,14 @@
+#cloud-config
+hostname: test-vm
+users:
+  - name: testuser
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    # ssh_authorized_keys:
+    #   - ssh-rsa AAAA...your-ssh-key...
+    # plain_text_passwd: 'changeme'
+    passwd: '$6$rounds=656000$519QAHGwv88/Dly1$hvQ6EsNFWmuooQ77wDELucPChViYLrdWDRDyP8YomMbNlPgDzf1YakAS0.93h4q3AC7Vjl.uCm5v/pnU82gDC0'
+chpasswd:
+  expire: false
+
