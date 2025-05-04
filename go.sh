@@ -1,4 +1,4 @@
-qemu-system-aarch64 \                                                                       6m 19s
+qemu-system-aarch64 \
   -machine virt \
   -cpu cortex-a72 \
   -m 2048 \
